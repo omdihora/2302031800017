@@ -1,4 +1,5 @@
 # 2302031800017
 Web Technology with  UI/UX
 <br>
-Author - Om Dihora
+Author - Om patel
+
