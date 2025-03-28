@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience VR</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #9b3b3b;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: black;
+        }
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+            background: rgba(255, 235, 235, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+            position: relative;
+        }
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .header {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+        .place {
+            position: relative;
+            cursor: pointer;
+        }
+        .place img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            padding: 15px;
+            font-size: 20px;
+        }
+        .footer {
+            margin-top: 20px;
+        }
+        .footer button {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="back-button" onclick="goBack()">BACK</button>
+        <div class="header">EXPERIENCE VR</div>
+        <div class="grid">
+            <div class="place"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo6FFj53MgLLWk5zUrj97JQPtT9cjEAa4-MQ&s"><div class="play-button">▶</div><p>THE GREAT WALL OF CHINA</p></div>
+            <div class="place"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOqIMxo0Zdt-mEwo56wVmJyJ9lcPip4YRefQ&s"><div class="play-button">▶</div><p>TAJ MAHAL</p></div>
+            <div class="place"><img src="https://plus.unsplash.com/premium_photo-1661963952208-2db3512ef3de?fm=jpg&q=60&w=3000"><div class="play-button">▶</div><p>ROMAN COLOSSEUM</p></div>
+            <div class="place"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyNSmJoFDumNUzsNBQUBd2FkrjRiMhDiq29w&s"><div class="play-button">▶</div><p>KUMBHALGARH FORT</p></div>
+            <div class="place"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9i3dQsMQ0sIhV_fwqkt9NhMACjmdB0eCsPw&s"><div class="play-button">▶</div><p>STONEHENGE</p></div>
+            <div class="place"><img src="https://karnatakatourism.org/wp-content/uploads/2020/12/mysuru-palace.jpg"><div class="play-button">▶</div><p>MYSORE PALACE</p></div>
+        </div>
+        <div class="footer">
+            <button>MORE PLACES --></button>
+        </div>
+    </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

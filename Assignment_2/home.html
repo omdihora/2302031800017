@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VR History Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f8d7da;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #8b0000;
+            padding: 15px 30px;
+            color: white;
+        }
+
+        .navbar .menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .navbar .profile {
+            font-size: 24px;
+        }
+
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+        }
+
+        .hero .left {
+            flex: 1;
+            padding: 50px;
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        .hero .left h1 {
+            font-size: 36px;
+            color: #000;
+        }
+
+        .hero .left p {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        .hero .left .buttons {
+            margin-top: 20px;
+        }
+
+        .hero .left button {
+            background: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .hero .right {
+            flex: 1;
+            text-align: center;
+        }
+
+        .hero .right img {
+            width: 100%;
+            max-width: 792px;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero .left,
+            .hero .right {
+                flex: none;
+                width: 100%;
+            }
+
+            .hero .left button {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">History Quiz</div>
+        <div class="menu">
+            <a href="home.html">HOME</a>
+            <a href="about_us.html">ABOUT US</a>
+            <a href="historical_place.html">HISTORY</a>
+            <a href="Quiz_category.html">QUIZ</a>
+        </div>
+        <div class="profile">👤</div>
+    </div>
+    <div class="hero">
+        <div class="left">
+            <h1>Virtual Reality History Quiz Show</h1>
+            <p>Immerse yourself in history and test your knowledge with our engaging historical VR videos and quiz show.
+            </p>
+            <div class="buttons">
+                <a href="Quiz_category.html">
+                    <button>START QUIZ</button>
+                </a>
+                <a href="expirence_vr.html">
+                    <button>EXPERIENCE VR</button>
+                </a>
+            </div>
+        </div>
+        <div class="right">
+            <img src="v2_3.png" alt="Gandhi wearing VR headset">
+        </div>
+    </div>
+</body>
+
+</html>
